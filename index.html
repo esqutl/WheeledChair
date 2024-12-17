@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Convierte tu silla de ruedas convencional en robótica por solo $10,000 MXN. Proyecto desarrollado por MECH Robotix AC para mejorar la calidad de vida de las personas con discapacidad.">
+    <meta name="keywords" content="silla de ruedas, robótica, discapacidad, Mech Robotix, Bluetooth, innovación">
+    <meta name="author" content="MECH Robotix AC">
+    <title>Wheeled Chair</title>
+    <link rel="stylesheet" href="assets/styles/main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="shortcut icon" type="image/x-icon" href="../static/img/favicon.ico">
+</head>
+<body>
+
+  <!-- Header -->
+  <header>
+    <nav>
+      <!-- ESPACIO PARA COLOCAR LOGO EN HEADER -->
+      <!--<div class="logo">
+        <img src="/assets/images/robotix_logo.png" alt="Logo Mech Robotix">
+      </div>-->
+      <ul>
+        <li><a href="#inicio" title="Ir a la página de inicio">INICIO</a></li>
+        <li><a href="#ventajas" title="Información sobre las ventajas">INFORMACIÓN</a></li>
+        <li><a href="#contacto" title="Formulario de contacto">CONTACTO</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Inicio -->
+  <section id="inicio" class="inicio">
+    <div class="inicio-contenido">
+      <h1>Wheeled Chair</h1>
+      <p>Convierte tu silla de ruedas convencional a robótica por solo $10,000 MXN.</p>
+      <a href="#ventajas" class="btn-inicio" title="Conoce más sobre Wheeled Chair">Quiero saber más</a>
+      </div>
+  </section>
+
+  <!-- Ventajas -->
+  <section id="ventajas" class="ventajas">
+    <div class="caja_i">
+      <img src="/assets/images/silla_autores.jpg" alt="Silla de ruedas convertida a robótica">
+    </div>
+    <div class="caja_d">
+      <h2>Ventajas de Wheeled Chair</h2>
+      <ul>
+        <li>Alternativa asequible a las costosas sillas eléctricas.</li>
+        <li>Mejora la calidad de vida y la autonomía.</li>
+        <li>Instalación rápida y diseño desmontable.</li>
+        <li>Desarrollado por alumnos de secundaria con MECH Robotix AC.</li>
+      </ul>
+      <button onclick="toggleInformacion()" class="btn-ver-mas">¿Cómo funciona?</button>
+    </div>
+  </section>
+
+  <!-- Información técnica -->
+  <section id="informacion" class="informacion">
+    <div class="columna">
+      <h2>Especificaciones</h2>
+      <p>Medidas:</p>
+      <ul>
+        <li>45 cm de largo</li>
+        <li>20 cm de ancho</li>
+        <li>17 cm de alto</li>
+      </ul>
+      <br>
+      <p>Duración de batería: 3 horas</p>
+      <p>Peso: 4 kg</p>
+      <img src="/assets/images/sensor.png" alt="Sensor ultrasónico del convertidor">
+      <p>Cuenta con un sensor ultrasónico y se controla por Bluetooth, con una app (tacto, giroscopio o comando de voz)</p>
+    </div>
+    <div class="columna">
+      <h2>Diseño innovador</h2>
+      <p>Convertidor diseñado con SolidWorks, orientado a la accesibilidad y autonomía</p>
+      <img src="/assets/images/solidworks.png" alt="Diseño en SolidWorks del convertidor">
+    </div>
+    <div class="columna">
+      <h2>Mejoras recientes</h2>
+      <p>Trabajando en la implementación de joysticks para un control más intuitivo, además del manejo por voz y giroscopio mediante la app</p>
+      <img src="/assets/images/joystick.png" alt="Controlador tipo joystick para la silla">
+    </div>
+
+    <!-- BOTON PARA DESLIZAR A VIDEO -->
+    <!-- <a href="#video" class="btn-deslizar">
+      <i class="fas fa-chevron-down"></i>
+    </a> -->
+  </section>  
+  
+  <!-- SECCION DE VIDEO -->
+  <!-- <section id="video" class="video">
+    <h2>Video</h2>
+    <div class="video-container">
+      <video controls width="100%" height="auto">
+        <source src="/assets/images/video.mp4" type="video/mp4">
+        No es posible cargar el video
+      </video>
+    </div>
+  </section>    -->
+
+  <!-- Contacto -->
+  <section id="contacto" class="contacto">
+    <h2>Contáctanos</h2>
+    <form action="mailto:mechrobotixchihuahua@gmail.com" method="POST" enctype="text/plain">
+      <div class="form-grupo">
+        <label for="nombres">Nombre completo:</label>
+        <input type="text" id="nombres" name="nombres" placeholder="Escribe tu nombre completo" required>
+      </div>
+      <div class="form-grupo">
+        <label for="correo">Correo Electrónico:</label>
+        <input type="email" id="correo" name="correo" placeholder="ejemplo@correo.com" required>
+      </div>
+      <div class="form-grupo">
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="+52 123 456 7890" required>
+      </div>
+      <div class="form-grupo">
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="3" placeholder="Escribe tu mensaje aquí"></textarea>
+      </div>
+      <button type="submit" class="btn-enviar">Enviar</button>
+    </form>
+
+    <div class="redes-sociales">
+      <a href="https://www.facebook.com/MechRobotixchih/" target="_blank" class="icono"><i class="fab fa-facebook" title="Visítanos en Facebook"></i></a>
+      <a href="https://www.instagram.com/mechrobotix_chihuahua/?hl=es-la" target="_blank" class="icono"><i class="fab fa-instagram" title="Visítanos en Instagram"></i></a>
+      <a href="https://mx.linkedin.com/in/mech-robotix-academy-ac-2970801a2" target="_blank" class="icono"><i class="fab fa-linkedin" title="Visítanos en LinkedIn"></i></a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <span>&copy; 2024 Mech Robotix</span>
+      <a href="https://mechrobotix.wixsite.com/misitio/proyectos" target="_blank" class="footer-link">Más información</a>
+    </div>
+  </footer>
+
+  <script src="/assets/scripts/main.js"></script>
+</body>
+</html>
